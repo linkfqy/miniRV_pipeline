@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jul 13 16:41:43 2022
+# Process ID: 18972
+# Current directory: D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/inst_mem_synth_1
+# Command line: vivado.exe -log inst_mem.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source inst_mem.tcl
+# Log file: D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/inst_mem_synth_1/inst_mem.vds
+# Journal file: D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/inst_mem_synth_1\vivado.jou
+#-----------------------------------------------------------
+source inst_mem.tcl -notrace

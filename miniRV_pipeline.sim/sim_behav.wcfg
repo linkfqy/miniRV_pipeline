@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="sim" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="7523843334fs"></ZoomStartTime>
+      <ZoomEndTime time="8067843335fs"></ZoomEndTime>
+      <Cursor1Time time="6545000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="207"></NameColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="18" />
+   <wave_markers>
+      <marker time="6445000000" label="" />
+      <marker time="7595000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/sim/mini_rv_u/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/IF_u/pc_pc" type="array">
+      <obj_property name="ElementShortName">pc_pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc_pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/ID_u/irom_inst" type="array">
+      <obj_property name="ElementShortName">irom_inst[31:0]</obj_property>
+      <obj_property name="ObjectShortName">irom_inst[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/ID_u/rf_u/rR1" type="array">
+      <obj_property name="ElementShortName">rR1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rR1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/ID_u/rf_u/rR2" type="array">
+      <obj_property name="ElementShortName">rR2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rR2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/ID_u/rf_u/wR" type="array">
+      <obj_property name="ElementShortName">wR[4:0]</obj_property>
+      <obj_property name="ObjectShortName">wR[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/ID_u/rf_u/wD" type="array">
+      <obj_property name="ElementShortName">wD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/ID_u/rf_u/wE" type="logic">
+      <obj_property name="ElementShortName">wE</obj_property>
+      <obj_property name="ObjectShortName">wE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/EX_u/alu_u/A" type="array">
+      <obj_property name="ElementShortName">A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/EX_u/alu_u/B" type="array">
+      <obj_property name="ElementShortName">B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/EX_u/alu_u/op" type="array">
+      <obj_property name="ElementShortName">op[3:0]</obj_property>
+      <obj_property name="ObjectShortName">op[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/EX_u/alu_u/comp" type="array">
+      <obj_property name="ElementShortName">comp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">comp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/EX_u/alu_u/C" type="array">
+      <obj_property name="ElementShortName">C[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/dram_adr" type="array">
+      <obj_property name="ElementShortName">dram_adr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dram_adr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/dram_rd" type="array">
+      <obj_property name="ElementShortName">dram_rd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dram_rd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/dram_we" type="logic">
+      <obj_property name="ElementShortName">dram_we</obj_property>
+      <obj_property name="ObjectShortName">dram_we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sim/mini_rv_u/dram_wdin" type="array">
+      <obj_property name="ElementShortName">dram_wdin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dram_wdin[31:0]</obj_property>
+   </wvobject>
+</wave_config>

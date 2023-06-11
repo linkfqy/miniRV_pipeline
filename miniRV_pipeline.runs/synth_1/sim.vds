@@ -1,0 +1,639 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jul 13 17:11:09 2022
+# Process ID: 1772
+# Current directory: D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/synth_1
+# Command line: vivado.exe -log sim.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sim.tcl
+# Log file: D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/synth_1/sim.vds
+# Journal file: D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sim.tcl -notrace
+Command: synth_design -top sim -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7540 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 469.109 ; gain = 101.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sim' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/sim.v:2]
+WARNING: [Synth 8-85] always block has no event control specified [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/sim.v:10]
+INFO: [Synth 8-6157] synthesizing module 'cpuclk' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/synth_1/.Xil/Vivado-1772-LINKFQY/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpuclk' (1#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/synth_1/.Xil/Vivado-1772-LINKFQY/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mini_rv' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:2]
+INFO: [Synth 8-6157] synthesizing module 'IF' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/IF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'npc' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/npc.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'npc' (2#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/npc.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pc' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/pc.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (3#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/pc.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'IF' (4#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/IF.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ID' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ID.v:1]
+INFO: [Synth 8-6157] synthesizing module 'sext' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/sext.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'sext' (5#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/sext.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rf' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/rf.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rf' (6#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/rf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ctrl.v:1]
+	Parameter R bound to: 7'b0110011 
+	Parameter I bound to: 7'b0010011 
+	Parameter L bound to: 7'b0000011 
+	Parameter JALR bound to: 7'b1100111 
+	Parameter S bound to: 7'b0100011 
+	Parameter B bound to: 7'b1100011 
+	Parameter LUI bound to: 7'b0110111 
+	Parameter J bound to: 7'b1101111 
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (7#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ctrl.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ID' (8#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ID.v:1]
+INFO: [Synth 8-6157] synthesizing module 'EX' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/EX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (9#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'EX' (10#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/EX.v:1]
+INFO: [Synth 8-6157] synthesizing module 'WB' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/WB.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'WB' (11#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/WB.v:1]
+WARNING: [Synth 8-3848] Net wb_have_inst in module/entity mini_rv does not have driver. [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:12]
+WARNING: [Synth 8-3848] Net wb_pc in module/entity mini_rv does not have driver. [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:13]
+WARNING: [Synth 8-3848] Net wb_ena in module/entity mini_rv does not have driver. [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:14]
+WARNING: [Synth 8-3848] Net wb_reg in module/entity mini_rv does not have driver. [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:15]
+WARNING: [Synth 8-3848] Net wb_value in module/entity mini_rv does not have driver. [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'mini_rv' (12#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:2]
+INFO: [Synth 8-6157] synthesizing module 'inst_mem' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/synth_1/.Xil/Vivado-1772-LINKFQY/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'inst_mem' (13#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/synth_1/.Xil/Vivado-1772-LINKFQY/realtime/inst_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'data_mem' [D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/synth_1/.Xil/Vivado-1772-LINKFQY/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'data_mem' (14#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/synth_1/.Xil/Vivado-1772-LINKFQY/realtime/data_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sim' (15#1) [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/sim.v:2]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_have_inst
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[31]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[30]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[29]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[28]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[27]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[26]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[25]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[24]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[23]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[22]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[21]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[20]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[19]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[18]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[17]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[16]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[15]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[14]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[13]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[12]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[11]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[10]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[9]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[8]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[7]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[6]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[5]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[4]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[3]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[2]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[1]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[0]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_ena
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_reg[4]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_reg[3]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_reg[2]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_reg[1]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_reg[0]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[31]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[30]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[29]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[28]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[27]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[26]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[25]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[24]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[23]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[22]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[21]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[20]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[19]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[18]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[17]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[16]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[15]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[14]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[13]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[12]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[11]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[10]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[9]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[8]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[7]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[6]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[5]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[4]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[3]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[2]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[1]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_value[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 525.391 ; gain = 157.699
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[31] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[30] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[29] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[28] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[27] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[26] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[25] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[24] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[23] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[22] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[21] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[20] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[19] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[18] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[17] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[16] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[15] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[14] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[13] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[12] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[11] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[10] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[9] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[8] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[7] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[6] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[5] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[4] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[3] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[2] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[1] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_imm[0] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[31] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[30] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[29] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[28] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[27] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[26] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[25] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[24] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[23] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[22] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[21] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[20] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[19] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[18] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[17] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[16] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[15] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[14] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[13] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[12] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[11] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[10] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[9] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[8] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[7] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[6] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[5] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[4] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[3] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[2] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[1] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin IF_u:npc_adrj[0] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:23]
+WARNING: [Synth 8-3295] tying undriven pin ID_u:alu_comp[1] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:62]
+WARNING: [Synth 8-3295] tying undriven pin ID_u:alu_comp[0] to constant 0 [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v:62]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 525.391 ; gain = 157.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 525.391 ; gain = 157.699
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/inst_mem/inst_mem/inst_mem_in_context.xdc] for cell 'imem'
+Finished Parsing XDC File [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/inst_mem/inst_mem/inst_mem_in_context.xdc] for cell 'imem'
+Parsing XDC File [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/data_mem/data_mem/data_mem_in_context.xdc] for cell 'dmem'
+Finished Parsing XDC File [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/data_mem/data_mem/data_mem_in_context.xdc] for cell 'dmem'
+Parsing XDC File [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc] for cell 'UCLK'
+Finished Parsing XDC File [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc] for cell 'UCLK'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 881.492 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 881.492 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 881.492 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 881.492 ; gain = 513.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 881.492 ; gain = 513.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for imem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dmem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for UCLK. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 881.492 ; gain = 513.801
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "rg_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rg_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sext_op" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rf_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dram_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wd_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/alu.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 881.492 ; gain = 513.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 46    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	  33 Input     32 Bit        Muxes := 2     
+	  10 Input     32 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 36    
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sim 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module npc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module rf 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	  33 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+Module ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  11 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	  10 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module EX 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module WB 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module mini_rv 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 13    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "ctrl_u/sext_op" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ctrl_u/rf_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ctrl_u/dram_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ctrl_u/wd_sel" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_have_inst
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[31]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[30]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[29]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[28]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[27]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[26]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[25]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[24]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[23]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[22]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[21]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[20]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[19]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[18]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[17]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[16]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[15]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[14]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[13]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[12]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[11]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[10]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[9]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[8]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[7]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[6]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[5]
+WARNING: [Synth 8-3331] design mini_rv has unconnected port wb_pc[4]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 881.492 ; gain = 513.801
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'UCLK/clk_in1' to pin 'fpga_clk0_inferred/i_0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'UCLK/clk_out1' to pin 'UCLK/bbstub_clk_out1/O'
+INFO: [Synth 8-5783] Moving clock source from hierarchical pin 'UCLK/clk_in1' to 'fpga_clk0_inferred/i_0/I'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 881.492 ; gain = 513.801
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 956.734 ; gain = 589.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 956.734 ; gain = 589.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 956.734 ; gain = 589.043
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 956.734 ; gain = 589.043
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 956.734 ; gain = 589.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 956.734 ; gain = 589.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 956.734 ; gain = 589.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 956.734 ; gain = 589.043
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|sim         | mini_rv_u/MEM_WB_npc_pc4_reg[31] | 4      | 31    | YES          | NO                 | YES               | 31     | 0       | 
++------------+----------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |cpuclk        |         1|
+|2     |inst_mem      |         1|
+|3     |data_mem      |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |cpuclk   |     1|
+|2     |data_mem |     1|
+|3     |inst_mem |     1|
+|4     |BUFG     |     1|
+|5     |CARRY4   |    16|
+|6     |LUT1     |    14|
+|7     |LUT2     |    67|
+|8     |LUT3     |    37|
+|9     |LUT4     |    13|
+|10    |LUT5     |   186|
+|11    |LUT6     |   854|
+|12    |MUXF7    |   256|
+|13    |SRL16E   |    31|
+|14    |FDCE     |  1326|
+|15    |FDRE     |    34|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------+--------+------+
+|      |Instance    |Module  |Cells |
++------+------------+--------+------+
+|1     |top         |        |  2901|
+|2     |  mini_rv_u |mini_rv |  2828|
+|3     |    EX_u__0 |EX      |     8|
+|4     |      alu_u |alu     |     8|
+|5     |    ID_u    |ID      |  1864|
+|6     |      rf_u  |rf      |  1864|
+|7     |    IF_u    |IF      |    73|
+|8     |      pc_u  |pc      |    73|
+|9     |    WB_u    |WB      |    32|
++------+------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 956.734 ; gain = 589.043
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 71 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:02 . Memory (MB): peak = 956.734 ; gain = 232.941
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:18 . Memory (MB): peak = 956.734 ; gain = 589.043
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 272 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 956.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+87 Infos, 172 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 956.734 ; gain = 600.543
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 956.734 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/synth_1/sim.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sim_utilization_synth.rpt -pb sim_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 13 17:12:50 2022...

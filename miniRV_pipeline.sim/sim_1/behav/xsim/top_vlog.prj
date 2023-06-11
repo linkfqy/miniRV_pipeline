@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../miniRV_pipeline.srcs/sources_1/ip/data_mem/sim/data_mem.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/ip/inst_mem/sim/inst_mem.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/EX.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/ID.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/IF.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/WB.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/alu.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/ctrl.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/mini_rv.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/npc.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/pc.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/rf.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/sext.v" \
+"../../../../miniRV_pipeline.srcs/sources_1/top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

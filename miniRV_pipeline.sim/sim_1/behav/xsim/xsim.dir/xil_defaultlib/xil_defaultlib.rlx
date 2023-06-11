@@ -1,0 +1,22 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.sim/sim_1/behav/xsim/glbl.v,1544155482,verilog,,,,glbl,,,,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/EX.v,1657677275,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ID.v,,EX,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ID.v,1657676398,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/IF.v,,ID,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/IF.v,1657681394,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/WB.v,,IF,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/WB.v,1657344428,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/alu.v,,WB,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/alu.v,1656914038,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ctrl.v,,alu,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ctrl.v,1657700791,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v,,ctrl,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.v,1657590998,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/EX.v,,cpuclk,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,1657590998,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.v,,cpuclk_clk_wiz,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/data_mem/sim/data_mem.v,1657587968,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/inst_mem/sim/inst_mem.v,,data_mem,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/inst_mem/sim/inst_mem.v,1657701696,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk_clk_wiz.v,,inst_mem,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/mini_rv.v,1657703275,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/npc.v,,mini_rv,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/npc.v,1657681390,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/pc.v,,npc,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/pc.v,1657681403,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/rf.v,,pc,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/rf.v,1656857048,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/sext.v,,rf,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/sext.v,1656914040,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/sim.v,,sext,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/sim.v,1657694254,verilog,,,,sim,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,
+D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/top.v,1656930410,verilog,,D:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/sim.v,,top,,,../../../../miniRV_pipeline.srcs/sources_1/ip/cpuclk,,,,,

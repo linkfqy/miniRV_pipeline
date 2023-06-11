@@ -1,0 +1,190 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jul 13 17:12:59 2022
+# Process ID: 19100
+# Current directory: D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/impl_1
+# Command line: vivado.exe -log sim.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sim.tcl -notrace
+# Log file: D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/impl_1/sim.vdi
+# Journal file: D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source sim.tcl -notrace
+Command: link_design -top sim -part xc7a100tfgg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.dcp' for cell 'UCLK'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/data_mem/data_mem.dcp' for cell 'dmem'
+INFO: [Project 1-454] Reading design checkpoint 'd:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/inst_mem/inst_mem.dcp' for cell 'imem'
+INFO: [Netlist 29-17] Analyzing 2705 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 4 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. UCLK/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'UCLK/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk_board.xdc] for cell 'UCLK/inst'
+Finished Parsing XDC File [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk_board.xdc] for cell 'UCLK/inst'
+Parsing XDC File [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xdc] for cell 'UCLK/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xdc:57]
+get_clocks: Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1321.199 ; gain = 580.953
+Finished Parsing XDC File [d:/FPGA/miniRV_pipeline/miniRV_pipeline.srcs/sources_1/ip/cpuclk/cpuclk.xdc] for cell 'UCLK/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1321.301 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2048 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 2048 instances
+
+12 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 1321.301 ; gain = 964.391
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1321.301 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1df6cc099
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1332.793 ; gain = 11.492
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 12f4f0221
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1419.617 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 16 cells and removed 19 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 1571ca045
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1419.617 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 1 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 10d504fc3
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1419.617 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 5954 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 10d504fc3
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1419.617 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 2ecac210
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1419.617 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 2ecac210
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1419.617 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              16  |              19  |                                              1  |
+|  Constant propagation         |               0  |               1  |                                              1  |
+|  Sweep                        |               0  |            5954  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1419.617 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 2ecac210
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1419.617 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 2ecac210
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1419.617 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 2ecac210
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1419.617 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1419.617 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 2ecac210
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1419.617 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+30 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 1419.617 ; gain = 98.316
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1419.617 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1419.617 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/impl_1/sim_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file sim_drc_opted.rpt -pb sim_drc_opted.pb -rpx sim_drc_opted.rpx
+Command: report_drc -file sim_drc_opted.rpt -pb sim_drc_opted.pb -rpx sim_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/FPGA/miniRV_pipeline/miniRV_pipeline.runs/impl_1/sim_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1419.617 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1419.617 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1419.617 ; gain = 0.000
+ERROR: [Place 30-494] The design is empty
+Resolution: Check if opt_design has removed all the leaf cells of your design.  Check whether you have instantiated and connected all of the top level ports.
+Ending Placer Task | Checksum: 00000000
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 1419.617 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+45 Infos, 2 Warnings, 0 Critical Warnings and 2 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 13 17:14:24 2022...
